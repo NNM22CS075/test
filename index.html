@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <style>
+            .picture {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+backgr
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+}
+.navig {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.navig a {
+  float: left;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  width: 25%; 
+  text-align: center;
+}
+.navig a:hover {
+  background-color: #000;
+}
+.navbar a.active {
+  background-color: #04AA6D;
+}
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee; 
+  color: black;
+  display: block;
+  padding: 12px; 
+  text-decoration: none; 
+}
+.vertical-menu a:hover {
+  background-color: #ccc; 
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="picture">
+            <div class="image">
+        <img src="download.png">
+    </div>
+    <div class="text">
+        <p style="text-align: right;">NMAM Institute of Technology</p>
+        <p style="text-align: right;">Affiliated to VTU</p>
+        <p style="text-align: right;">Nitte, Karkala</p>
+     
+    </div>
+</div>
+
+<nav>
+    <div class="navig">
+        <a class="active" href="#">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">DEPARTMENT
+            
+            </button>
+            <div class="dropdown-content">
+              <a href="cs.html">Computer Science</a>
+              <a href="is.html">Information Science</a>
+              <a href="aiml.html">AIML</a>
+            </div>
+          </div>
+        <a href="aboutus.html">ABOUT US</a>
+        <a class="vertical-menu" href="resources.html">RESOURCES</a>
+
+      </div>
+</nav>
+<h1>Programs</h1>
+<ul>
+    <li>Computer Science Engineering</li>
+    <li>Information Science Engineering</li>
+    <li>Artifial Intelligence and Machine Learning</li>
+    <li>Artifial Intelligence and Data Science</li>
+    <li>Electronics and Communication Engineering</li>
+    <li>Electronics and Electrical Engineering</li>
+</ul>
+    </body>
+</html>
